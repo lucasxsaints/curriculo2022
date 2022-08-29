@@ -9,6 +9,7 @@
 
 
      <style>
+       / * reset de estilo */
         *{
          
          margin: 0%;
@@ -17,23 +18,47 @@
 
         }
         
-        header {
+      header 
+        {
                 
-                background-color: aqua;
-                background-image: url(./img/datwyler.com_advanced-technologies.jpg);
-                background-position: center;
-                background-size: cover;
-                color:#eeeeee;
-                padding: 30px;
-                text-align: center;                 
+          background-color: aqua;
+          background-image: url(./img/datwyler.com_advanced-technologies.jpg);
+          background-position: center;
+          background-size: cover;
+          color:#eeeeee;
+          padding: 30px;
+          text-align: center;                 
             
-             }
+         }
+         header h1 { color: chocolate; }
+
+         body { font-family:Arial, Helvetica, sans-serif;} 
+
+         #logo { width: 100%;
+                 float: left   }
+             
+      
+  
+        
+
+             nav {  background-color: dodgerblue; }
+            
+             nav a{ display: inline-block;
+                    padding: 10px 20px;
+                    color: #eeeeee; 
+                    text-decoration: none;}
+
+nav a:hover { background-color: #eeeeee;
+              color: dodgerblue; }
+
+                
+             
 
     </style>
 </head>
 <body>
      <header>
-        <div>
+        <div id="logo">
         <img src="https://lh3.googleusercontent.com/a-/AFdZucr4SWdZ-0eYwKajXLi79oU6FErpM3ilHXFPZA-S1g=s96-c-rg-br100" alt="" <br>
         </div>
         
@@ -51,16 +76,18 @@
     </header>
      <nav>
      
-        <p>Inicio</p> <p>Projetos</p> <p>Empresas</p>
+        <a href="index.htlm">Inicio</a> 
+        <a href="#projetos">Projetos</a> 
+        <a href="empresas">Empresas</a>
      
     </nav>
 
-     <section>
+     <section id="projetos"> 
         <h1>Projetos</h1>
         <p></p>
      </section>
      
-     <section>
+     <section id="empresas">
         <h1>Empresas</h1>
      </section>
     <footer>
